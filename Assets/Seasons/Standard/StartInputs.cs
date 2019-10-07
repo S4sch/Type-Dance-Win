@@ -28,6 +28,10 @@ public class StartInputs : MonoBehaviour
     System.Random r = new System.Random();
     public static int EngRan = 0;
 
+    //Music
+    AudioSource AS;
+
+
     void Start()
     {
         //Make the standard a - z keys
@@ -41,6 +45,8 @@ public class StartInputs : MonoBehaviour
         GameObject.Find("Press").GetComponent<TextMeshProUGUI>().richText = true;
         style.richText = true;
         SR = gameObject.GetComponent<SpriteRenderer>();
+        AS = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+        AS.mute = !GlobalSettings.AudioOn;
 
     }
   
