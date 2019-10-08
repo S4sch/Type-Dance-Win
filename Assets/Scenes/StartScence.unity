@@ -1270,8 +1270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d10e5084a64b349928f17fef3884db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicOn: {fileID: 0}
-  MusicStop: {fileID: 0}
 --- !u!1 &2105854135
 GameObject:
   m_ObjectHideFlags: 0
