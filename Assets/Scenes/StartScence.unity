@@ -1585,3 +1585,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd73427eab48c848ae7c5bf9351cc5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleChangeSpeed: 0.01

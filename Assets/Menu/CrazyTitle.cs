@@ -9,8 +9,10 @@ public class CrazyTitle : MonoBehaviour
     //All possible random colors
     string[] colors = new string[7] { "<color=green>", "<color=#00ff00ff>", "<color=red>", "<color=#FFBF00>", "<color=yellow>", "<color=#00ffffff>", "<color=#ff00ffff>" };
     List<string> allChanges = new List<string>(); 
-
     System.Random r = new System.Random();
+
+    //Variable for Change-Speed
+    public float titleChangeSpeed = 0.05f;
 
     //title Stuff
     int titleLength = 0;
@@ -26,7 +28,7 @@ public class CrazyTitle : MonoBehaviour
         titleText = TMP.text;
 
         //Start the Random Title Color Changer
-        StartCoroutine(TitleChanger(0.05f));
+        StartCoroutine(TitleChanger(titleChangeSpeed));
     }
 
     IEnumerator TitleChanger(float time)
@@ -58,7 +60,7 @@ public class CrazyTitle : MonoBehaviour
         }
 
         //Sort the changes       
-        StartCoroutine(TitleChanger(0.05f));
+        StartCoroutine(TitleChanger(titleChangeSpeed));
     }
 
     //Sort the Position of all changes so that its easier to work with them
