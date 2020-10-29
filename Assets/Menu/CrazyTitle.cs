@@ -35,7 +35,7 @@ public class CrazyTitle : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        //Change random character with random color and delelte the old color
+        //Change random character with random color and delete the old color
         int randColor = r.Next(0, colors.Length - 1);
         int randTitlePos = r.Next(0, titleLength);
         for (int i = 0; i < allChanges.Count; i++)

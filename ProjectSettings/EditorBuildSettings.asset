@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TypingScene.unity
     guid: a66c3f11b3146da4a91079f66bb1b412
+  - enabled: 1
+    path: Assets/Scenes/OptionScene.unity
+    guid: c221e4e460603a442bb8a117ec295f4b
   m_configObjects: {}
